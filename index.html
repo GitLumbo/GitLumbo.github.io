@@ -3,6 +3,16 @@
 
 <head>
     <title>Hello</title>
+    <script>
+        const nowTime = new Date();
+        const nowDay = nowTime.getDay();
+        const nowHour = nowTime.getHours();
+        const onAir = (nowDay == 1 | nowDay == 4) && (nowHour == 9 | nowHour == 10)
+        window.onload = () => {
+            if (onAir)
+                document.getElementById("onAir").innerText = "입니다."
+        }
+    </script>
 </head>
 
 <body>
@@ -15,6 +25,8 @@
     <p>인터넷 프로그래밍 2024.3.14. 9시 수업 시간입니다.</p>
     <p>인터넷 프로그래밍 2024.3.14. 9시 수업 시간입니다.</p>
     <p>인터넷 프로그래밍 2024.3.14. 9시 수업 시간입니다.</p>
+    <h2 style="color: rgb(255, 111, 34);">현재 수업중<div id="onAir" style="display: inline;">이 아닙니다.</div>
+    </h2>
     <hr />
     <div style="text-align: center; font-size: 9pt; color: darkgrey;">12211564 곽서현 - 컴퓨터공학과</div>
 </body>
