@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+}
+#onAir {
+  display: inline;
+}
+.on__air {
+  color: rgb(255, 111, 34);
+}
+footer {
+  text-align: center;
+  font-size: 9pt;
+  color: darkgrey;
+}
