@@ -9,3 +9,6 @@
 .imgBox > span {
   display: block;
 }
+.imgBox > img {
+  width: 30vw;
+}
