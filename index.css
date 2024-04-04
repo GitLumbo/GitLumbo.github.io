@@ -29,3 +29,22 @@ figcaption.popup {
   display: flex;
   flex-direction: column;
 }
+.container {
+  background-color: #4ab2d6;
+  width: 600px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px;
+}
+.container:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container div {
+  background-color: #80cfec;
+  flex: 1 1 150px;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+}
